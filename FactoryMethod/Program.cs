@@ -15,17 +15,17 @@ namespace FactoryMethod
 
 	abstract class Creator
 	{
-		protected abstract IProduct FactoryMethod();
+		protected abstract Product FactoryMethod();
 		public void AnOperation()
 		{
-			IProduct product = FactoryMethod();
+			Product product = FactoryMethod();
 			product.Foo();
 		}
 	}
 
 	class ConcreteCreatorA : Creator
 	{
-		protected override IProduct FactoryMethod()
+		protected override Product FactoryMethod()
 		{
 			return new ConcreteProductA();
 		}
@@ -33,18 +33,18 @@ namespace FactoryMethod
 
 	class ConcreteCreatorB : Creator
 	{
-		protected override IProduct FactoryMethod()
+		protected override Product FactoryMethod()
 		{
 			return new ConcreteProductB();
 		}
 	}
 
-	interface IProduct
+	interface Product
 	{
 		void Foo();
 	}
 
-	class ConcreteProductA : IProduct
+	class ConcreteProductA : Product
 	{
 		public void Foo()
 		{
@@ -52,7 +52,7 @@ namespace FactoryMethod
 		}
 	}
 
-	class ConcreteProductB : IProduct
+	class ConcreteProductB : Product
 	{
 		public void Foo()
 		{
