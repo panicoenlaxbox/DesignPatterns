@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creation", "Creation", "{7BE9569A-F017-4128-815C-ECF02B2A942B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{1623AB89-5D43-4498-8B23-A9E6BA8515BE}"
@@ -86,6 +88,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Command", "Command", "{15D8E851-2BDA-4E2D-92EF-BCC72296D288}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command", "Command\Command.csproj", "{23A20C91-FE9C-4C70-A3CC-2B14BFBACBE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{9F5212BC-6473-4A4E-A1A9-7AA441780A57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visitor", "Visitor", "{CB7D249D-1D3B-4C51-B0F3-EB15384AC70A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -181,6 +187,13 @@ Global
 		{23A20C91-FE9C-4C70-A3CC-2B14BFBACBE3}.Debug|x86.Build.0 = Debug|x86
 		{23A20C91-FE9C-4C70-A3CC-2B14BFBACBE3}.Release|x86.ActiveCfg = Release|x86
 		{23A20C91-FE9C-4C70-A3CC-2B14BFBACBE3}.Release|x86.Build.0 = Release|x86
+		{9F5212BC-6473-4A4E-A1A9-7AA441780A57}.Debug|x86.ActiveCfg = Debug|x86
+		{9F5212BC-6473-4A4E-A1A9-7AA441780A57}.Debug|x86.Build.0 = Debug|x86
+		{9F5212BC-6473-4A4E-A1A9-7AA441780A57}.Release|x86.ActiveCfg = Release|x86
+		{9F5212BC-6473-4A4E-A1A9-7AA441780A57}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1623AB89-5D43-4498-8B23-A9E6BA8515BE} = {7BE9569A-F017-4128-815C-ECF02B2A942B}
@@ -223,5 +236,10 @@ Global
 		{CB43DE3A-30FF-4E57-9603-80A6F66E4885} = {369D8727-9A37-433F-ABA6-5D1883562BE6}
 		{15D8E851-2BDA-4E2D-92EF-BCC72296D288} = {F7AAEBA6-4706-4897-9A93-DEB2E3146D1E}
 		{23A20C91-FE9C-4C70-A3CC-2B14BFBACBE3} = {15D8E851-2BDA-4E2D-92EF-BCC72296D288}
+		{9F5212BC-6473-4A4E-A1A9-7AA441780A57} = {CB7D249D-1D3B-4C51-B0F3-EB15384AC70A}
+		{CB7D249D-1D3B-4C51-B0F3-EB15384AC70A} = {F7AAEBA6-4706-4897-9A93-DEB2E3146D1E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9D9CEFB-9DD2-465C-BC34-ECB2F9119C17}
 	EndGlobalSection
 EndGlobal
